@@ -5,7 +5,7 @@ const getUrl =
   "https://go--tickets-default-rtdb.europe-west1.firebasedatabase.app/.json";
 let product = {
   fields: { image: { fields: { file: {} } } },
-  sys: {},
+  sys: {""},
 };
 
 class Year {
@@ -41,8 +41,8 @@ function save() {
   product.fields.image.fields.file.url = document.getElementById("url").value;
   product.fields.price = document.getElementById("price").value;
   product.fields.title = document.getElementById("title").value;
-  if (product.key) {
-    fetch(`${addUrl}/${product.key}.json`, {
+  if (product.sys) {
+    fetch(`${addUrl}/${product.sys}.json`, {
       method: "PUT",
       body: JSON.stringify(product),
     }).then(() => {
@@ -68,7 +68,7 @@ function setEditDetails() {
 document.addEventListener("DOMContentLoaded", () => {
   const products = new Products();
   const year = new Year();
-  year.newYear();
+
   products.getProducts().then((products) => {
     let urlParams = new URLSearchParams(window.location.search);
     let productId = urlParams.get("id");
@@ -79,4 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
       product.sys.id = products.length + 1;
     }
   });
+
+  year.newYear();
 });

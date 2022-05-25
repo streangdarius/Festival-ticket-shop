@@ -78,17 +78,11 @@ class UI {
       button.addEventListener("click", (event) => {
         event.target.innerHTML = `<i class="fas fa-check"></i>&nbspAdded to cart`;
         event.target.disabled = true;
-        // Getting the products based on ID from the Products
         let cartItem = { ...Storage.getProduct(id), amount: 1 };
-        // Add Products to the Cart
         cart = [...cart, cartItem];
-        // Save the Cart to Local Storage
         Storage.saveCart(cart);
-        // Set cart values
         this.setCartValues(cart);
-        // Display Cart Item
         this.addCartItem(cartItem);
-        // Show Cart Overlay
         this.showCart();
       });
     });
@@ -215,8 +209,6 @@ class Storage {
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const products = new Products();
-  const year = new Year();
-  year.newYear();
   // Application Load
   ui.setupAPP();
   // get all products
@@ -230,4 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.getBagButtons();
       ui.cartLogic();
     });
+    const year = new Year();
+    year.newYear();
+  
 });
