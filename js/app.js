@@ -32,10 +32,9 @@ class Products {
       );
       products = arrayProducts.map((item) => {
         const { title, price, description } = item.fields;
-        const { sysId } = item.sys;
-        let id = sysId.toString();
+        const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, price, id, image, description };
+        return { title, price, id.toString(), image, description };
       });
       return products;
     } catch (error) {
