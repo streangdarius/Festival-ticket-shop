@@ -32,7 +32,8 @@ class Products {
       );
       products = arrayProducts.map((item) => {
         const { title, price, description } = item.fields;
-        const { id } = item.sys;
+        const { sysId } = item.sys;
+        let id = sysId.toString();
         const image = item.fields.image.fields.file.url;
         return { title, price, id, image, description };
       });
@@ -222,7 +223,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.getBagButtons();
       ui.cartLogic();
     });
-    const year = new Year();
-    year.newYear();
-  
+  const year = new Year();
+  year.newYear();
 });

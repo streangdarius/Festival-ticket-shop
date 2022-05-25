@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       product = products.find((item) => item.key == productId);
       setEditDetails();
     } else {
-      product.sys.id = (products.length + 1).toString();
+      product.sys.id = products.length + 1
     }
   });
 
