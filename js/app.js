@@ -34,7 +34,7 @@ class Products {
         const { title, price, description } = item.fields;
         const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, price, id.toString(), image, description };
+        return { title, price, id, image, description };
       });
       return products;
     } catch (error) {
