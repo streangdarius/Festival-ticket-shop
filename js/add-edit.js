@@ -23,7 +23,7 @@ class Products {
       let data = await result.json();
       let products = data.items;
       let arrayProducts = Object.entries(products).map((e) =>
-        Object.assign(e[1], { key: e[0].toString })
+        Object.assign(e[1], { key: e[0] })
       );
       return arrayProducts;
     } catch (error) {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       product = products.find((item) => item.key == productId);
       setEditDetails();
     } else {
-      product.sys.id = products.length + 1;
+      product.sys.id = (products.length + 1).toString();
     }
   });
 
