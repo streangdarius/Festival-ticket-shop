@@ -32,7 +32,7 @@ class Products {
       );
       products = arrayProducts.map((item) => {
         const { title, price, description } = item.fields;
-        const { id } = item.sys;
+        let { id } = item.sys;
         const image = item.fields.image.fields.file.url;
         return { title, price, id, image, description };
       });

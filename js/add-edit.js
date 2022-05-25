@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let urlParams = new URLSearchParams(window.location.search);
     let productId = urlParams.get("id");
     if (productId != null) {
-      product = products.find((item) => item.key == productId);
+      product = products.find((item) => item.key === productId);
       setEditDetails();
     } else {
-      product.sys.id = products.length + 1
+      product.sys.id = `${products.length + 1}`;
     }
   });
 
