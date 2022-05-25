@@ -5,7 +5,7 @@ const getUrl =
   "https://go--tickets-default-rtdb.europe-west1.firebasedatabase.app/.json";
 let product = {
   fields: { image: { fields: { file: {} } } },
-  sys: {""},
+  sys: {},
 };
 
 class Year {
@@ -23,7 +23,7 @@ class Products {
       let data = await result.json();
       let products = data.items;
       let arrayProducts = Object.entries(products).map((e) =>
-        Object.assign(e[1], { key: e[0] })
+        Object.assign(e[1], { key: e[0].toString })
       );
       return arrayProducts;
     } catch (error) {
@@ -41,8 +41,8 @@ function save() {
   product.fields.image.fields.file.url = document.getElementById("url").value;
   product.fields.price = document.getElementById("price").value;
   product.fields.title = document.getElementById("title").value;
-  if (product.sys) {
-    fetch(`${addUrl}/${product.sys}.json`, {
+  if (product.key) {
+    fetch(`${addUrl}/${product.key}.json`, {
       method: "PUT",
       body: JSON.stringify(product),
     }).then(() => {
