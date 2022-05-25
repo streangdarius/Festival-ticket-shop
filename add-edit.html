@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>go! tickets | Database page</title>
+    <!-- Font Awesome Import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/add-edit.css" />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!-- Start of Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <h1 class="navbar-logo">
+          go<span class="navbar-small-logo">&nbsp!</span>
+        </h1>
+        <span
+          ><span class="main-page"
+            ><a class="main-page" href="app.html"
+              ><i class="fas fa-chevron-left"></i> Go back to main page
+            </a></span
+          ><span
+            ><a class="main-page" href="admin.html"
+              ><i class="fas fa-chevron-left"></i> Administrative Dashboard</a
+            > </span
+          ><i class="fas fa-chevron-left"></i> Add or Edit Dashboard</span
+        >
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start of Add or Edit Ticket Database -->
+    <div class="wrapper">
+      <form>
+        <label>Add or Edit Ticket Database</label>
+        <input id="title" type="text" placeholder="Title" />
+        <input id="url" type="url" placeholder="Image URL" />
+        <input id="price" type="number" placeholder="Price" />
+        <input id="description" type="text" placeholder="Description" />
+        <div class="button-wrapper">
+          <button
+            class="save-button"
+            type="button"
+            onclick="save()"
+            title="Save Application"
+          >
+            <i class="fas fa-save"></i>
+          </button>
+          <button
+            class="close-button"
+            type="button"
+            onclick="cancel()"
+            title="Close Application"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- End of Add or Edit Ticket Database -->
+
+    <!-- Start of Footer -->
+    <footer>
+      <p>
+        &copy <span class="footer-year">2021</span>. Website created by Streang
+        Darius.
+      </p>
+    </footer>
+    <!-- JavaScript Application Files -->
+    <script src="js/add-edit.js"></script>
+  </body>
+</html>

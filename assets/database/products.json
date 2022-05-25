@@ -1,0 +1,140 @@
+{
+  "items": [
+    {
+      "fields": {
+        "description": "Tomorrowland is a Belgian electronic dance music festival held in Boom, Flanders, Belgium. Tomorrowland was first held in 2005. It now stretches over two weekends and usually sells out in minutes.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-1.jpeg"
+            }
+          }
+        },
+        "price": 345,
+        "title": "Tomorrowland"
+      },
+      "sys": {
+        "id": "1"
+      }
+    },
+    {
+      "fields": {
+        "description": "The Coachella Festival is an annual music and arts festival held at the Empire Polo Club in Indio, California, in the Coachella Valley in the Colorado Desert. Across the grounds, several stages continuously host live music.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-2.jpeg"
+            }
+          }
+        },
+        "price": 299,
+        "title": "Coachella"
+      },
+      "sys": {
+        "id": "2"
+      }
+    },
+    {
+      "fields": {
+        "description": "Electric Daisy Carnival, commonly known as EDC, is the largest electronic dance music festival in North America. The annual flagship event is now held in May, at the Las Vegas Motor Speedway and Orlando.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-3.jpeg"
+            }
+          }
+        },
+        "price": 195,
+        "title": "Electric Daisy Carnival"
+      },
+      "sys": {
+        "id": "3"
+      }
+    },
+    {
+      "fields": {
+        "description": "Ultra Music Festival (UMF) is an annual outdoor electronic music festival that takes place during March in Miami, Florida, United States.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-4.jpeg"
+            }
+          }
+        },
+        "price": 414,
+        "title": "Ultra Music Festival"
+      },
+      "sys": {
+        "id": "4"
+      }
+    },
+    {
+      "fields": {
+        "description": "Untold Festival is the largest electronic music festival held in Romania, taking place in Cluj-Napoca at the Cluj Arena. It is held annually and has been designated Best Major Festival in the European Festival Awards 2015.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-5.jpeg"
+            }
+          }
+        },
+        "price": 185,
+        "title": "Untold Festival"
+      },
+      "sys": {
+        "id": "5"
+      }
+    },
+    {
+      "fields": {
+        "description": "Untold Festival is the largest electronic music festival held in Romania, taking place in Cluj-Napoca at the Cluj Arena. It is held annually and has been designated Best Major Festival in the European Festival Awards 2015.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-6.jpeg"
+            }
+          }
+        },
+        "price": 185,
+        "title": "Electric Castle"
+      },
+      "sys": {
+        "id": "6"
+      }
+    },
+    {
+      "fields": {
+        "description": "The Sziget Festival is one of the largest music and cultural festivals in Europe. It is held every August in northern Budapest, Hungary, on Óbudai-sziget (Old Buda Island), a leafy 108-hectare (266-acre) island on the Danube.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-7.jpeg"
+            }
+          }
+        },
+        "price": 95,
+        "title": "Sziget Festival"
+      },
+      "sys": {
+        "id": "7"
+      }
+    },
+    {
+      "fields": {
+        "description": "Creamfields is an electronic dance music festival series founded and organised by British club promoter Cream, with its UK edition taking place on August Bank Holiday weekend, with a number of international editions held across various territories worldwide.",
+        "image": {
+          "fields": {
+            "file": {
+              "url": "./images/product-8.jpeg"
+            }
+          }
+        },
+        "price": 105,
+        "title": "Creamfields"
+      },
+      "sys": {
+        "id": "8"
+      }
+    }
+  ]
+}

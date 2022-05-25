@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>go! tickets | Administrator page</title>
+    <!-- Font Awesome Import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <!-- Start of Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <h1 class="navbar-logo">
+          go<span class="navbar-small-logo">&nbsp!</span>
+        </h1>
+        <span
+          ><span class="main-page"
+            ><a class="main-page" href="app.html"
+              ><i class="fas fa-chevron-left"></i> Go back to main page
+            </a></span
+          ><i class="fas fa-chevron-left"></i> Administrative Dashboard</span
+        >
+      </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Start of Header Section -->
+    <header>
+      <div class="assets">
+        <p>
+          <i class="fas fa-exclamation-triangle"></i> <b>Notice:</b> Please be
+          advised that any modifications done to the database are permanent.
+        </p>
+        <img class="notice-image" src="assets/singer_hover.jpg" alt="Singer" />
+        <p class="description">
+          <i class="fas fa-plus plus"></i>&nbspAdd a new item |&nbsp;
+          <i class="fas fa-edit edit"></i>&nbspEdit existing item |&nbsp;
+          <i class="fas fa-eraser erase"></i>&nbspDelete existing item
+        </p>
+      </div>
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Start of the Database Container -->
+    <!-- Start of Button Section for Adding Items to Database -->
+    <container>
+      <div class="buttons-wrapper">
+        <button class="add-button" title="Add a new item" onclick="add()">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <!-- End of Button Section for Adding Items to Database -->
+      <!-- Start of the Table Section -->
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Image:</th>
+            <th>Name:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+            <th>Actions:</th>
+          </tr>
+          <tbody id="tableDOM"></tbody>
+        </table>
+      </div>
+    </container>
+    <!-- End of the Database Container -->
+
+    <!-- Start of the Footer COntainer -->
+    <footer>
+      <p>
+        &copy <span class="footer-year">2021</span>. Website created by Streang
+        Darius.
+      </p>
+    </footer>
+    <!-- End of the Footer COntainer -->
+
+    <!-- JavaScript Application Files -->
+    <script src="js/admin.js"></script>
+  </body>
+</html>

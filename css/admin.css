@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+  background-color: #f1ebf5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start of Navigation Bar Style */
+.navbar {
+  position: sticky;
+  background-color: #f1ebf5;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.navbar-icon {
+  color: #6c4dc5;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.navbar-logo {
+  color: #6c4dc5;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -5px;
+}
+
+.navbar-small-logo {
+  color: #f171a1;
+}
+
+.main-page {
+  color: #f171a1;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.main-page:hover {
+  color: #222;
+  transition: 0.3s ease-in-out;
+}
+/* End of Navigation Bar Style */
+
+/* Start of Table Style */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets {
+  width: 100%;
+  max-width: 1170px;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6c4dc5;
+  color: #f1ebf5;
+  letter-spacing: 0.05rem;
+}
+
+.assets img {
+  align-self: center;
+  object-fit: cover;
+  height: 10rem;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.assets > p {
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+/* Small button description */
+.description {
+  margin: 0.5rem auto;
+  color: #6c4dc5;
+  font-size: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  border: 1.5px solid #6c4dc5;
+  border-radius: 100%;
+  padding: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit {
+  border: 1.5px solid #6c4dc5;
+  border-radius: 100%;
+  padding: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.erase {
+  border: 1.5px solid #6c4dc5;
+  border-radius: 100%;
+  padding: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons Style Section */
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add New Item Button Style */
+.add-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 50px;
+  color: #5fdb12;
+  border: 2px solid #5fdb12;
+  border-radius: 100%;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  color: #f1ebf5;
+  background-color: #5fdb12;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* End of Add Button */
+
+.wrapper {
+  display: table-cell;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Table Style */
+.table-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  font-size: 0.75rem;
+  color: #222;
+  overflow: auto;
+  border-collapse: separate;
+}
+
+table img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+th {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  background-color: #6c4dc5;
+  color: #f1ebf5;
+}
+
+tr {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.edit-button {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebb70e;
+  border: 2px solid #ebb70e;
+  border-radius: 100%;
+  background-color: transparent;
+  padding: 0.5rem;
+  text-decoration: none;
+  object-fit: cover;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 1rem 1rem;
+}
+
+.edit-button:hover {
+  color: #f1ebf5;
+  background-color: #ebb70e;
+}
+
+.remove-button {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eb3900;
+  border: 2px solid #eb3900;
+  border-radius: 100%;
+  background-color: transparent;
+  padding: 0.5rem;
+  text-decoration: none;
+  object-fit: cover;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 1rem 1rem;
+}
+
+.remove-button:hover {
+  color: #f1ebf5;
+  background-color: #eb3900;
+}
+
+/* --------- Footer Bar Start -------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #f171a1;
+}

@@ -1,0 +1,224 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black-color: #222;
+  --white-color: #fff;
+  --light-gray-color: #f1ebf5;
+  --dark-pink-color: #e64298;
+  --light-pink-color: #f171a1;
+  --purple-color: #6c4dc5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--black-color);
+  background: var(--purple-color);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-image: url(../assets/singer_hover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-center {
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.navbar-icon {
+  color: var(--black-color);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.navbar-logo {
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -5px;
+}
+
+.navbar-small-logo {
+  color: var(--light-pink-color);
+}
+
+.navbar-contact {
+  color: var(--white-color);
+  font-weight: 400;
+  margin-left: 1rem;
+  letter-spacing: -0.1rem;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  background: var(--white-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field {
+  margin-bottom: 0.3rem;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+}
+
+.wrapper .input_field input[type="text"]:focus {
+  border-color: #f171a1;
+}
+
+.wrapper .input_field input[type="text"]::selection {
+  border-color: #f171a1;
+  color: #f171a1;
+}
+
+.wrapper textarea {
+  resize: none;
+  height: 6.5rem;
+}
+
+.wrapper textarea:focus {
+  border-color: #f171a1;
+}
+
+.gender_text {
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+.input_field_radio {
+  margin: 0 0 10px 0px;
+}
+
+.input_field_radio input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.input_field_radio label {
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+.input_field_radio label:hover {
+  background-color: rgb(241, 113, 161, 0.3);
+  cursor: pointer;
+}
+
+.input_field_radio input[type="radio"]:focus + label {
+  border-color: #f171a1;
+}
+
+.input_field_radio input[type="radio"]:checked + label {
+  background-color: #f171a1;
+  border-color: #f171a1;
+  color: #f1ebf5;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.buttons a {
+  text-align: center;
+  width: 30%;
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: var(--black-color);
+}
+
+.submit {
+  border: 0;
+  padding: 0.5rem;
+  width: 70%;
+  background: transparent;
+  border: 2px solid #f171a1;
+  color: #f171a1;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background: #f171a1;
+  color: #f1ebf5;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:active {
+  background: #fed600;
+  transition: 0.3s ease-in-out;
+}
+
+#submit_message {
+  margin-bottom: 0.5rem;
+  background: #5fdb12;
+  color: #3b7c13;
+  padding: 0px;
+  text-align: center;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#alert_message {
+  margin-bottom: 0.5rem;
+  background: #fe8b8e;
+  color: #eb3900;
+  padding: 0px;
+  text-align: center;
+  font-size: 0.75rem;
+  transition: all 0.3s ease-in-out;
+}

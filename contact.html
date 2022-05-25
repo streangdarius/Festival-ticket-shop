@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Contact form validation" />
+    <title>go! tickets | Contact page</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar-center">
+      <h1 class="navbar-logo">
+        go<span class="navbar-small-logo">&nbsp!</span>
+      </h1>
+      <h1 class="navbar-contact">contact</h1>
+    </div>
+
+    <div class="wrapper">
+      <h2>send us a messsage</h2>
+      <div id="submit_message"></div>
+      <div id="alert_message"></div>
+
+      <form id="myForm" onsubmit="return validation">
+        <div class="input_field">
+          <input type="text" placeholder="Name" id="name" />
+        </div>
+
+        <div class="input_field">
+          <input type="text" placeholder="Surname" id="surname" />
+        </div>
+
+        <div class="input_field">
+          <input type="text" placeholder="Email" id="email" />
+        </div>
+
+        <div class="input_field_radio">
+          <p class="gender_text">Please select your gender:</p>
+
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <label id="male" for="male">Male</label>
+
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="input_field">
+          <textarea
+            id="message"
+            placeholder="Message"
+            maxlength="80"
+          ></textarea>
+        </div>
+        <div class="buttons">
+          <a href="app.html"><i class="fas fa-chevron-left"></i>&nbsp;Go back</a>
+          <button class="submit" id="submit" type="submit" value="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
